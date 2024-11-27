@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 2"
+title: "Research on Pricing and Replenishment Strategy Problems Based on Time Series Analysis and Greedy Algorithm"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Academic Competition"
+permalink: /teaching/guosai
+venue: "China Undergraduate Mathematical Contest in Modeling"
+category: bisai
+date: 2023-1-1
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+[获取PDF](http://ShangrunLu666.github.io/files/基于时间序列分析与贪心算法的定价与补货策略问题研究.pdf)
