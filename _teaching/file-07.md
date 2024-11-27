@@ -2,8 +2,8 @@
 title: "Femtosecond Laser Direct Writing Processing Inside Flexible Materials"
 collection: teaching
 type: "Course Papers"
-permalink: /teaching/wulizizhusheji
-venue: "Self-designed Experiments in Optical Information"
+permalink: /teaching/guangxinxisheji
+venue: "Self-Designed Experiments in Optical Information"
 category: kecheng
 date: 2024-11-1
 ---
