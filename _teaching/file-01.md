@@ -8,5 +8,4 @@ category: bisai
 date: 2023-1-1
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/美赛2330197paper.pdf
-)
+[获取PDF](http://ShangrunLu666.github.io/files/美赛2330197paper.pdf)
