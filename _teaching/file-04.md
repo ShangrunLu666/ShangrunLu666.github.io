@@ -1,5 +1,5 @@
 ---
-title: "Ultra-Strong Coupling and Novel Phenomena in Superconducting Quantum Circuits"
+title: "Ultrastrong Coupling and Novel Phenomena in Superconducting Quantum Circuits"
 collection: teaching
 type: "Scientific Research"
 permalink: /teaching/chuangxinsai
