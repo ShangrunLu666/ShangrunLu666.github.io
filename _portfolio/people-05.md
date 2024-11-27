@@ -5,5 +5,3 @@ collection: portfolio
 venue: 'Group Members'
 category: group
 ---
-
-Haonan Xie is a Ph.D. student in our research group. His work focuses on advancing technologies related to two-dimensional magnetic materials.
