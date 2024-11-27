@@ -8,7 +8,7 @@ category: keyan
 date: 2024-4-10
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/Bose-Hubbard Model.pdf)
+[Download PDF](http://ShangrunLu666.github.io/files/Bose-Hubbard Model.pdf)
 
 
 
