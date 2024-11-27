@@ -3,9 +3,9 @@ title: "Used Sailboats Pricing Model Based on Decision Tree Regression with AdaB
 collection: teaching
 type: "Academic Competition"
 permalink: /teaching/meisai
-venue: "美国大学生数学建模竞赛"
+venue: "Mathematical Contest In Modeling(MCM)"
 category: bisai
 date: 2023-1-1
 ---
 
-[获取PDF](http://ShangrunLu.github.io/files/美赛2330197paper.pdf)
+[获取PDF](http://ShangrunLu.github.io/files/meisai.pdf)
