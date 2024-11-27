@@ -8,4 +8,4 @@ category: diaoyan
 date: 2024-4-10
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/量子系统中的耗散-课程论文.pdf)、[获取PPT](http://ShangrunLu666.github.io/files/量子系统中的耗散.pdf)
+[Download PDF](http://ShangrunLu666.github.io/files/量子系统中的耗散-课程论文.pdf)、[Download PPT](http://ShangrunLu666.github.io/files/量子系统中的耗散.pdf)
