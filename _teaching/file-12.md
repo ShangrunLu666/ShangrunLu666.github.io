@@ -8,4 +8,4 @@ category: diaoyan
 date: 2024-6-10
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/固体物理讨论班课程论文.pdf)、[获取PPT](http://ShangrunLu666.github.io/files/固体物理讨论班课程PPT.pdf)
+[Download PDF](http://ShangrunLu666.github.io/files/固体物理讨论班课程论文.pdf)、[Download PPT](http://ShangrunLu666.github.io/files/固体物理讨论班课程PPT.pdf)
