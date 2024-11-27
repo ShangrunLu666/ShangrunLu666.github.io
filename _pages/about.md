@@ -1,11 +1,14 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "个人简介"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+我是谁
+======
 
 我叫路尚润，即将是一名[北京大学](https://www.pku.edu.cn/)[材料科学与工程学院](https://www.mse.pku.edu.cn/index.htm)的博士生。我的研究方向是磁斯格明子，包括微磁模拟和洛伦兹透射电子显微镜。凭借扎实的学术基础和实践经验，我致力于推动对磁性材料的理解和应用。
 
