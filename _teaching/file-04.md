@@ -8,4 +8,4 @@ category: keyan
 date: 2024-2-10
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/超导量子电路中的超强耦合和新奇现象结题论文.pdf)
+[Download PDF](http://ShangrunLu666.github.io/files/超导量子电路中的超强耦合和新奇现象结题论文.pdf)
