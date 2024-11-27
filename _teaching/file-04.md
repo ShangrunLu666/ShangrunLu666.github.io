@@ -3,7 +3,7 @@ title: "Ultrastrong Coupling and Novel Phenomena in Superconducting Quantum Circ
 collection: teaching
 type: "Scientific Research"
 permalink: /teaching/chuangxinsai
-venue: "China Undergraduate Physics Experiment Competition(CUPEC)"
+venue: "College Students' Innovative Entrepreneurial Training Plan Program(National Level)"
 category: keyan
 date: 2024-2-10
 ---
