@@ -96,12 +96,12 @@ portfolio_category:
     
 # files Category 
 teaching_category:
-  bisai:
-    title: 'Academic Competition'
-  kecheng:
-    title: 'Course Papers'
   keyan:
     title: 'Scientific Research'
+  kecheng:
+    title: 'Course Papers'
+  bisai:
+    title: 'Academic Competition'
   diaoyan:
     title: 'Research Report'
 
