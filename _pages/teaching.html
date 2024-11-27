@@ -1,12 +1,29 @@
 ---
 layout: archive
-title: "Teaching"
-permalink: /teaching/
+title: "Files Sharing"
+permalink: /sharing/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<!-- New style rendering if teaching categories are defined -->
+{% if site.teaching_category %}
+  {% for category in site.teaching_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.teaching reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.teaching reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
