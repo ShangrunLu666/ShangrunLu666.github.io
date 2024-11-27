@@ -1,14 +1,30 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Interpersonal Relationship"
+permalink: /relationship/
 author_profile: true
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<!-- New style rendering if portfolio categories are defined -->
+{% if site.portfolio_category %}
+  {% for category in site.portfolio_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.portfolio reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.portfolio reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
 
