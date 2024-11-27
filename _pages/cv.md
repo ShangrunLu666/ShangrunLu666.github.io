@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download File Here](https://SHangrunLu666.github.io/files/CV.pdf)
+[Download File Here](https://ShangrunLu666.github.io/files/CV.pdf)
