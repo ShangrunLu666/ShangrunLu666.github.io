@@ -8,4 +8,4 @@ category: kecheng
 date: 2024-11-7
 ---
 
-[获取PDF](http://ShangrunLu666.github.io/files/磁性超表面的单向光传播-结题报告.pdf)、[获取PPT](http://ShangrunLu666.github.io/files/磁性超表面的单向光传播-结题PPT.pdf)
+[Download PDF](http://ShangrunLu666.github.io/files/磁性超表面的单向光传播-结题报告.pdf)、[Download PPT](http://ShangrunLu666.github.io/files/磁性超表面的单向光传播-结题PPT.pdf)
