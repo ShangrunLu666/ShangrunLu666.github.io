@@ -83,6 +83,9 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  patent:
+    title:'Invention Patents'
+    
 # Portfolio Category 
 portfolio_category:
   family:
