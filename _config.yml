@@ -84,7 +84,7 @@ publication_category:
   conferences:
     title: 'Conference Papers'
   patent:
-    title:'Invention Patents'
+    title: 'Invention Patents'
     
 # Portfolio Category 
 portfolio_category:
