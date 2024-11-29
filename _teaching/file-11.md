@@ -3,7 +3,7 @@ title: "Dissipation in Quantum Systems"
 collection: teaching
 type: "Research Report"
 permalink: /teaching/relixueyutongjiwulitaolunban
-venue: "Thermodynamics and Statistical Physics Seminar Discussion Course"
+venue: "Thermodynamics and Statistical Physics Discussion Course"
 category: diaoyan
 date: 2024-4-10
 ---
