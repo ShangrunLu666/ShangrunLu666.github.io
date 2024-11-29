@@ -1,10 +1,10 @@
 ---
 title: "General Physics Experiment"
 collection: teaching
-type: "Research Report"
+type: "Experiment Report"
 permalink: /teaching/General Physics Experiment
 venue: "Experimental Course"
-category: diaoyan
+category: shiyan
 date: 2022-12-10
 ---
 
