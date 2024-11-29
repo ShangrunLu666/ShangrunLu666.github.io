@@ -5,7 +5,7 @@ category: patent
 permalink: /publication/Magnetic Suspension Charging Type Sound Box
 excerpt: 'The present invention is a magnetically levitated rechargeable loudspeaker, which fixes a magnetic levitation mechanism by means of a worm gear driven by a rotary wheel, a worm wheel, a cylinder and a threaded rod linkage mechanism to levitate the sound and reduce the impact of the power supply.[[Details]](https://patents.google.com/patent/CN109511050B/en).'
 date: 2019-01-04
-venue: 'Patent 2'
+venue: 'China'
 paperurl: 'http://ShangrunLu666.github.io/files/CN201910006541专利全文及图片.pdf'
 citation: 'Shangrun Lu. (2019-01-04). Magnetic Suspension Charging Type Sound Box. CN109511050A [Patent]. 2019-03-22.'
 ---
