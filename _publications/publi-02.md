@@ -5,7 +5,7 @@ category: patent
 permalink: /publication/A Kind of Magnetic Levitation Rechargeable Speaker
 excerpt: 'The present invention is a magnetically levitated rechargeable speaker with an automatic dust removal function that cleans up dust through a system of magnetism, vibration and fans to maintain sound quality. [[Details]](https://patents.google.com/patent/CN109379668B/en).'
 date: 2018-12-18
-venue: 'Patent 1'
+venue: 'China'
 paperurl: 'http://ShangrunLu666.github.io/files/CN201811547154专利全文及图片.pdf'
 citation: 'Shangrun Lu. (2018-12-18). A Kind of Rechargeable Magnetic Suspension Speaker. CN109379668B [Patent]. 2019-02-22.'
 ---
