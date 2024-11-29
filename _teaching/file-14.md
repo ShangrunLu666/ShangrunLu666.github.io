@@ -1,7 +1,7 @@
 ---
 title: "Electronic Technology Experiments"
 collection: teaching
-type: "Research Report"
+type: "Experiment Report"
 permalink: /teaching/electronic technology experiments
 venue: "Experimental Course"
 category: shiyan
