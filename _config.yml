@@ -107,6 +107,8 @@ teaching_category:
     title: 'Academic Competition'
   diaoyan:
     title: 'Research Report'
+  shiyan:
+    title: 'Experiment Report'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
