@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/Algorithm for Diffraction of Complex Apertures Based on Ear-Clipping Method
 excerpt: 'The analytical solution of diffraction for complex structures was studied using machine vision and the ear-clipping method.'
-date: 2025-02
+date: 2025-02-01
 venue: 'College Physics'
 paperurl: 'http://ShangrunLu666.github.io/files/daxuewuli.pdf'
 citation: '路尚润,简彬洋,黄维政,等.基于耳切法的复杂结构衍射研究[J].大学物理,2025,44(02):111-116.DOI:10.16854/j.cnki.1000-0712.240284.'
