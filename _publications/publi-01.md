@@ -1,5 +1,5 @@
 ---
-title: "Algorithm for Diffraction of Complex Apertures Based on Ear-Clipping Method"
+title: "Algorithm fordiffraction of complex apertures based  on Ear-Clipping method"
 collection: publications
 category: manuscripts
 permalink: /publication/Algorithm for Diffraction of Complex Apertures Based on Ear-Clipping Method
