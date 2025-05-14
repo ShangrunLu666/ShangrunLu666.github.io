@@ -88,12 +88,12 @@ publication_category:
     
 # Portfolio Category 
 portfolio_category:
-  group:
-    title: 'Group Members'
   family:
     title: 'Family'
   friends:
     title: 'My Friends'
+  group:
+    title: 'Group Members'
   photo:
     title: 'Group Photos'
     
