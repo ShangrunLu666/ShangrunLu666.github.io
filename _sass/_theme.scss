@@ -204,6 +204,17 @@ a {
     background: #f4f8fb;
     border: 1px solid #e8eff5;
     border-radius: 12px;
+
+    .author__avatar {
+      width: 100%;
+      text-align: center;
+
+      img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
