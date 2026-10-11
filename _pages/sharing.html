@@ -1,0 +1,29 @@
+---
+layout: archive
+title: "Files Sharing"
+permalink: /sharing/
+author_profile: true
+---
+
+{% include base_path %}
+
+<!-- Render shared academic work by category -->
+{% if site.sharing_category %}
+  {% for category in site.sharing_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.sharing reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.sharing reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

@@ -86,8 +86,8 @@ publication_category:
   patent:
     title: 'Invention Patents'
     
-# Portfolio Category 
-portfolio_category:
+# Relationship Category
+relationship_category:
   family:
     title: 'Family'
   friends:
@@ -97,8 +97,8 @@ portfolio_category:
   photo:
     title: 'Group Photos'
     
-# files Category 
-teaching_category:
+# Sharing Category
+sharing_category:
   keyan:
     title: 'Scientific Research'
   kecheng:
@@ -111,12 +111,12 @@ teaching_category:
     title: 'Experiment Report'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # optional teaser fallback image placed in /images/
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+life_map_link            : false # change to true to add a location map on the life page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -239,16 +239,16 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  sharing:
     output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  relationship:
     output: true
     permalink: /:collection/:path/
-  talks:
+  life:
     output: true
     permalink: /:collection/:path/
 
@@ -273,10 +273,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _sharing
   - scope:
       path: ""
-      type: teaching
+      type: sharing
     values:
       layout: single
       author_profile: true
@@ -291,21 +291,21 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _relationship
   - scope:
       path: ""
-      type: portfolio
+      type: relationship
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _life
   - scope:
       path: ""
-      type: talks
+      type: life
     values:
-      layout: talk
+      layout: life
       author_profile: true
       share: true
 
