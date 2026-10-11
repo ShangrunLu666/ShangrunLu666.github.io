@@ -265,12 +265,22 @@ a {
 
   .author__profile-item > i,
   .author__urls a > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     flex: 0 0 1.25em;
     width: 1.25em;
+    height: 1.5em;
     padding-right: 0;
     margin-right: 0.5em;
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
+    color: #7f90a6 !important;
+  }
+
+  .author__urls .fa-location-dot {
+    color: #8b9aad !important;
+    transform: translateX(0.08em);
   }
 
   .fas,

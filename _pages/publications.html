@@ -24,7 +24,8 @@ author_profile: true
           <section class="archive__year" aria-labelledby="publication-{{ category[0] }}-{{ year.name }}">
             <h3 class="archive__year-title" id="publication-{{ category[0] }}-{{ year.name }}">{{ year.name }}</h3>
             <div class="archive__year-items">
-              {% for post in year.items %}
+              {% assign year_posts = year.items | sort: "date" | reverse %}
+              {% for post in year_posts %}
                 {% include archive-single.html heading_tag="h4" hide_year=true %}
               {% endfor %}
             </div>
@@ -40,7 +41,8 @@ author_profile: true
     <section class="archive__year" aria-labelledby="publication-year-{{ year.name }}">
       <h2 class="archive__year-title" id="publication-year-{{ year.name }}">{{ year.name }}</h2>
       <div class="archive__year-items">
-        {% for post in year.items %}
+        {% assign year_posts = year.items | sort: "date" | reverse %}
+        {% for post in year_posts %}
           {% include archive-single.html heading_tag="h3" hide_year=true %}
         {% endfor %}
       </div>
