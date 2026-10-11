@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" fill="none">
+  <defs>
+    <linearGradient id="field" x1="120" y1="80" x2="850" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71D5E8"/>
+      <stop offset="0.52" stop-color="#76A7F4"/>
+      <stop offset="1" stop-color="#9A83EB"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(667 260) rotate(90) scale(48 48)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B579DF" stop-opacity=".4"/>
+      <stop offset=".48" stop-color="#6EBDEA" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#6EBDEA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="url(#field)" stroke-width="1.15" opacity=".62">
+    <ellipse cx="667" cy="260" rx="48" ry="34" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="76" ry="52" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="108" ry="73" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="145" ry="96" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="186" ry="121" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="230" ry="148" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="278" ry="177" transform="rotate(-13 667 260)"/>
+    <ellipse cx="667" cy="260" rx="330" ry="208" transform="rotate(-13 667 260)"/>
+
+    <path d="M25 76C209 52 328 85 407 164C485 242 488 352 583 402C674 450 802 405 938 293"/>
+    <path d="M4 126C188 96 312 119 387 188C461 256 471 361 565 421C664 484 810 449 955 326"/>
+    <path d="M4 184C169 150 292 165 369 221C447 278 457 383 548 445C651 515 810 488 956 378"/>
+    <path d="M23 252C164 210 277 211 353 258C434 307 448 408 533 470C634 544 789 536 938 447"/>
+    <path d="M73 337C181 287 278 277 349 316C425 357 449 443 526 498C616 564 750 575 883 520"/>
+    <path d="M151 438C231 388 307 372 367 400C428 428 460 493 520 536C592 588 692 614 794 591"/>
+  </g>
+
+  <circle cx="667" cy="260" r="48" fill="url(#core)"/>
+  <circle cx="667" cy="260" r="3.5" fill="#C95E70" opacity=".72"/>
+  <rect x="169" y="472" width="7" height="7" rx="1" fill="#C95E70" opacity=".48"/>
+
+  <g fill="#7398CC" opacity=".42">
+    <circle cx="818" cy="101" r="2.2"/><circle cx="855" cy="129" r="1.6"/>
+    <circle cx="891" cy="173" r="2.7"/><circle cx="867" cy="214" r="1.5"/>
+    <circle cx="837" cy="250" r="2"/><circle cx="894" cy="283" r="1.7"/>
+    <circle cx="782" cy="75" r="1.5"/><circle cx="735" cy="91" r="2.3"/>
+    <circle cx="907" cy="342" r="2.2"/><circle cx="851" cy="379" r="1.4"/>
+    <circle cx="756" cy="438" r="2.2"/><circle cx="713" cy="474" r="1.4"/>
+    <circle cx="245" cy="438" r="1.9"/><circle cx="208" cy="496" r="2.5"/>
+    <circle cx="132" cy="523" r="1.4"/><circle cx="98" cy="555" r="2.2"/>
+  </g>
+</svg>

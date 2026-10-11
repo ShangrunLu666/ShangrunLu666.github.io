@@ -55,24 +55,24 @@ $sidebar-link-max-width     : 250px;
    Colors
    ========================================================================== */
 
-$gray                       : #718096;
-$dark-gray                  : #3f4c5f;
-$darker-gray                : #202b3a;
-$light-gray                 : #d5dee8;
-$lighter-gray               : #f1f5f8;
+$gray                       : #7185a3;
+$dark-gray                  : #405876;
+$darker-gray                : #142a4d;
+$light-gray                 : #cbdced;
+$lighter-gray               : #edf5fb;
 
-$body-color                 : #fbfcfe;
-$background-color           : #fbfcfe;
-$code-background-color      : #f6f8fa;
+$body-color                 : #f7fbff;
+$background-color           : #f7fbff;
+$code-background-color      : #f2f7fc;
 $code-background-color-dark : $light-gray;
-$text-color                 : #344154;
-$border-color               : #e2e9f0;
+$text-color                 : #344d6d;
+$border-color               : #d8e6f3;
 
-$primary-color              : #2f80c8;
+$primary-color              : #5a8fe9;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #2f80c8;
+$info-color                 : #5a8fe9;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -102,10 +102,10 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : #2677b9;
-$link-color-hover           : #155b93;
-$link-color-visited         : #56799a;
-$masthead-link-color        : #536174;
+$link-color                 : #3e78cf;
+$link-color-hover           : #655ed4;
+$link-color-visited         : #617b9f;
+$masthead-link-color        : #526987;
 $masthead-link-color-hover  : $primary-color;
 
 
@@ -159,7 +159,7 @@ $susy: (
    ========================================================================== */
 
 $border-radius              : 8px;
-$box-shadow                 : 0 8px 24px rgba(32, 43, 58, 0.06);
+$box-shadow                 : 0 14px 40px rgba(49, 77, 122, 0.09);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $global-transition          : all 0.2s ease-in-out;
