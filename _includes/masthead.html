@@ -6,14 +6,26 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg{% if page.url == '/' %} is-active{% endif %}"><a href="{{ base_path }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign link_active = false %}
+            {% if page.url == link.url %}
+              {% assign link_active = true %}
+            {% elsif page.collection == 'publications' and link.url == '/publications/' %}
+              {% assign link_active = true %}
+            {% elsif page.collection == 'sharing' and link.url == '/sharing/' %}
+              {% assign link_active = true %}
+            {% elsif page.collection == 'life' and link.url == '/life/' %}
+              {% assign link_active = true %}
+            {% elsif page.collection == 'relationship' and link.url == '/relationship/' %}
+              {% assign link_active = true %}
+            {% endif %}
+            <li class="masthead__menu-item{% if link_active %} is-active{% endif %}"><a href="{{ domain }}{{ link.url }}"{% if link_active %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
