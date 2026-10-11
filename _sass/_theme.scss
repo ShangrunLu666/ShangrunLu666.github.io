@@ -76,6 +76,18 @@ body > .page__footer {
   filter: saturate(0.88);
 }
 
+.site-atmosphere__ink-landscape {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -4rem;
+  width: 86rem;
+  max-width: 94vw;
+  height: auto;
+  opacity: 0.38;
+  mix-blend-mode: multiply;
+  filter: saturate(0.72) contrast(0.96);
+}
+
 .site-atmosphere__field--top {
   top: 1rem;
   right: -20rem;
@@ -396,9 +408,10 @@ a {
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    position: fixed;
+    position: sticky;
     top: calc(#{$masthead-height} + 2.5em);
-    height: calc(100vh - #{$masthead-height} - 4em);
+    height: auto;
+    max-height: calc(100vh - #{$masthead-height} - 4em);
     padding-top: 0.9em;
   }
 
@@ -553,6 +566,14 @@ a {
 
   .site-atmosphere__field--bottom {
     display: none;
+  }
+
+  .site-atmosphere__ink-landscape {
+    bottom: -0.5rem;
+    left: -13rem;
+    width: 54rem;
+    max-width: none;
+    opacity: 0.24;
   }
 
   .archive__year-items,

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" fill="none">
+  <defs>
+    <linearGradient id="washBack" x1="98" y1="220" x2="1160" y2="465" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9AB6CE" stop-opacity=".74"/>
+      <stop offset=".44" stop-color="#8FAEC9" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#8E9ED2" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="washMid" x1="40" y1="250" x2="1020" y2="495" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6889AD" stop-opacity=".66"/>
+      <stop offset=".48" stop-color="#7798B8" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#82A7BE" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="washFront" x1="0" y1="350" x2="890" y2="515" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F739B" stop-opacity=".54"/>
+      <stop offset=".53" stop-color="#7195B2" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7FB6C5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="720" y1="92" x2="720" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset=".3" stop-color="white" stop-opacity=".64"/>
+      <stop offset=".68" stop-color="white"/>
+    </linearGradient>
+    <filter id="inkEdge" x="-8%" y="-24%" width="116%" height="152%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".007 .024" numOctaves="3" seed="17" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="B" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation=".55"/>
+    </filter>
+    <filter id="mist" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <mask id="verticalFade">
+      <rect width="1440" height="520" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#verticalFade)" filter="url(#inkEdge)">
+    <path d="M-30 438C75 409 126 367 202 331C255 306 294 337 345 312C414 278 465 190 532 157C583 132 621 236 682 271C737 303 786 267 846 286C921 310 964 370 1049 390C1166 418 1290 382 1470 349V540H-30V438Z" fill="url(#washBack)"/>
+    <path d="M-35 467C76 430 145 381 218 366C287 352 334 382 400 346C461 312 504 238 558 227C611 216 648 302 712 329C782 359 841 322 907 346C978 371 1020 422 1112 438C1221 458 1324 432 1471 402V540H-35V467Z" fill="url(#washMid)"/>
+    <path d="M-24 494C68 460 133 411 205 408C276 404 321 443 389 416C461 387 510 326 578 322C646 319 692 386 768 407C844 428 907 395 979 420C1061 448 1116 475 1209 480C1291 485 1368 464 1466 446V540H-24V494Z" fill="url(#washFront)"/>
+  </g>
+
+  <g opacity=".2" stroke="#385E87" stroke-width="1">
+    <path d="M52 451C144 420 182 366 253 347C319 329 352 357 416 329C482 300 502 230 557 211"/>
+    <path d="M81 470C165 444 210 402 273 385C337 368 382 389 435 364C492 337 523 282 579 267"/>
+    <path d="M141 487C223 462 260 430 320 419C380 408 417 429 471 405C522 382 552 347 610 338"/>
+  </g>
+
+  <g filter="url(#mist)" fill="#F5FAFE" opacity=".68">
+    <ellipse cx="454" cy="382" rx="230" ry="26"/>
+    <ellipse cx="829" cy="418" rx="286" ry="24"/>
+  </g>
+
+  <g fill="#52789D" opacity=".28">
+    <circle cx="78" cy="391" r="2.3"/><circle cx="101" cy="376" r="1.3"/>
+    <circle cx="128" cy="410" r="1.8"/><circle cx="168" cy="382" r="1.2"/>
+    <circle cx="214" cy="320" r="2"/><circle cx="247" cy="302" r="1.1"/>
+    <circle cx="303" cy="329" r="1.7"/><circle cx="357" cy="292" r="1.2"/>
+    <circle cx="427" cy="255" r="1.5"/><circle cx="482" cy="210" r="2.1"/>
+    <circle cx="535" cy="184" r="1.2"/><circle cx="589" cy="252" r="1.8"/>
+  </g>
+</svg>
