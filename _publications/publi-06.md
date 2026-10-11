@@ -1,0 +1,13 @@
+---
+title: "Helicity‐Dependent Ellipticity and Interstitial Vortices in Confined Anisotropic Skyrmions"
+collection: publications
+category: manuscripts
+permalink: /publication/Helicity‐Dependent Ellipticity and Interstitial Vortices in Confined Anisotropic Skyrmions
+excerpt: 'From the perspective of three-dimensional layer-dependent internal interactions, we reveal the mechanism governing the real-space lattice symmetry of an emerging topological texture, the hybrid string. The layer-dependent sign reversal of the interaction gives rise to competing repulsive and attractive interactions. Bloch points define the critical layers separating repulsion from attraction and thereby determine which interaction dominates, ultimately driving the lattice phase transition.'
+date: 2026-09-30
+venue: 'Advanced Materials'
+paperurl: 'http://ShangrunLu666.github.io/files/2026AMstripe.pdf'
+citation: 'S. Lu, Y. Hou, J. Masell, X. Zhang, Q. Luo, S. Fan, W. Zhao, Z. Luo, J. Yang, Y. Hou, L. Peng. Interaction Between Three‐Dimensional Topological Spin Textures With Layer‐Dependent Sign Change Tunes Lattice Symmetry. Advanced Materilas, e74896 (2026).'
+---
+
+Three-dimensional (3D) topological spin textures host rich internal structures in thickness dimensions and enable emergent topological phenomena. However, whether their layer-resolved textures and internal singularities fundamentally modify intralayer interactions lies beyond rigid-tube interaction models and remains unexplored. Here we show that, in 3D hybrid skyrmionantiskyrmion strings, the layer-dependent topology gives rise to interactions with a sign change across the film thickness, producing a switch between attraction and repulsion both among different layers within each texture and between neighboring 3D strings. This vertically asymmetric attractive-repulsive interaction drives a tunable transition between square and triangular string lattices, in agreement with our experiment. Computational simulations identify quadrupolar Bloch points as internal topological junctions whose vertical migration mediates the intralayer competition between repulsive skyrmion segments near the surfaces and attractive antiskyrmion segments in the interior. We further show that the averaged topological charge quantifies the relative thickness fractions of the two competing topological segments and robustly captures the lattice phase boundary over a broad range of magnetic parameters. These findings highlight the importance of the surface-bulk difference in topological materials and establish vertically asymmetric interactions as an intrinsic mechanism for topological phase control in 3D magnetic systems.
