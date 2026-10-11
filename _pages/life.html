@@ -11,6 +11,15 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.life reversed %}
-  {% include archive-single-life.html %}
+{% assign sorted_posts = site.life | sort: "date" | reverse %}
+{% assign year_groups = sorted_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in year_groups %}
+  <section class="archive__year archive__year--top-level" aria-labelledby="life-year-{{ year.name }}">
+    <h2 class="archive__year-title" id="life-year-{{ year.name }}">{{ year.name }}</h2>
+    <div class="archive__year-items">
+      {% for post in year.items %}
+        {% include archive-single-life.html heading_tag="h3" %}
+      {% endfor %}
+    </div>
+  </section>
 {% endfor %}

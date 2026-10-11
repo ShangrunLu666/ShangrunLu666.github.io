@@ -40,8 +40,11 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0.35em;
   font-family: $sans-serif-narrow;
+  font-size: 1.05em;
+  line-height: 1.4;
 
   a + a {
     opacity: 0.5;
@@ -58,11 +61,85 @@
 }
 
 .archive__item-excerpt {
-  margin-top: 0;
-  font-size: $type-size-6;
+  margin-top: 0.65em;
+  font-size: 0.9em;
+  line-height: 1.65;
+
+  p {
+    margin: 0 0 0.75em;
+  }
+
+  img {
+    display: block;
+    margin-top: 1em;
+  }
 
   & + p {
     text-indent: 0;
+  }
+}
+
+.archive__item-meta,
+.archive__item-links {
+  margin: 0.25em 0 0;
+  color: mix(#fff, $gray, 15%);
+  font-size: 0.82em;
+  line-height: 1.6;
+}
+
+.archive__item-links {
+  margin-top: 0.7em;
+}
+
+.archive__section {
+  margin-top: 3em;
+
+  &:first-of-type {
+    margin-top: 2em;
+  }
+}
+
+.archive__section-title {
+  margin: 0 0 1.25em;
+  padding-bottom: 0.5em;
+  font-size: $type-size-3;
+  line-height: 1.25;
+  border-bottom: 1px solid $border-color;
+}
+
+.archive__year {
+  margin: 2em 0 0;
+  padding-left: 1.25em;
+  border-left: 3px solid mix(#fff, $primary-color, 45%);
+
+  &--top-level:first-of-type {
+    margin-top: 2em;
+  }
+}
+
+.archive__year-title {
+  margin: 0 0 1em;
+  padding: 0;
+  color: $darker-gray;
+  font-size: $type-size-4;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  border: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.archive__year-items,
+.archive__section-items {
+  .list__item {
+    margin-bottom: 1.25em;
+    padding-bottom: 1.25em;
+    border-bottom: 1px solid $lighter-gray;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
   }
 }
 
@@ -90,18 +167,6 @@
    ========================================================================== */
 
 .list__item {
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
-  @include breakpoint($large) {
-    padding-right: $right-sidebar-width;
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: $right-sidebar-width-wide;
-  }
-
   .page__meta {
     margin: 0 0 4px;
   }

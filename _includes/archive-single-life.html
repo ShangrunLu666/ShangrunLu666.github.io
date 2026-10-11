@@ -11,6 +11,7 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
+{% assign heading_tag = include.heading_tag | default: "h2" %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -25,18 +26,18 @@
           alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
+    <{{ heading_tag }} class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h2>
+    </{{ heading_tag }}>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.date %}<p class="archive__item-meta"><i class="fa fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time></p>{% endif %}
+    {% if post.venue %}<p class="archive__item-meta">{{ post.type }}{% if post.type and post.venue %} <span aria-hidden="true">&middot;</span> {% endif %}{{ post.venue }}{% if post.location %} <span aria-hidden="true">&middot;</span> {{ post.location }}{% endif %}</p>{% endif %}
+    {% if post.excerpt %}<div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>{% endif %}
   </article>
 </div>

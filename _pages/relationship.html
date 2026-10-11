@@ -7,23 +7,23 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Render relationships by category -->
+<!-- Render relationships by category with a consistent content hierarchy. -->
 {% if site.relationship_category %}
-  {% for category in site.relationship_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.relationship reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for category in site.relationship_category %}
+    {% assign category_posts = site.relationship | where: "category", category[0] %}
+    {% if category_posts.size > 0 %}
+      <section class="archive__section" aria-labelledby="relationship-category-{{ category[0] }}">
+        <h2 class="archive__section-title" id="relationship-category-{{ category[0] }}">{{ category[1].title }}</h2>
+        <div class="archive__section-items">
+          {% for post in category_posts %}
+            {% include archive-single.html heading_tag="h3" %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.relationship %}
-    {% include archive-single.html %}
+    {% include archive-single.html heading_tag="h2" %}
   {% endfor %}
 {% endif %}
