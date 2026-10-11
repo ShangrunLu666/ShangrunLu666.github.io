@@ -396,6 +396,7 @@ a {
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
+    position: fixed;
     top: calc(#{$masthead-height} + 2.5em);
     height: calc(100vh - #{$masthead-height} - 4em);
     padding-top: 0.9em;
