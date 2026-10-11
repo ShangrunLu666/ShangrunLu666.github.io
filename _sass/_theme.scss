@@ -251,6 +251,28 @@ a {
     overflow-wrap: anywhere;
   }
 
+  .author__urls a {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .author__profile-item {
+    @include breakpoint($large) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .author__profile-item > i,
+  .author__urls a > i {
+    flex: 0 0 1.25em;
+    width: 1.25em;
+    padding-right: 0;
+    margin-right: 0.5em;
+    line-height: 1.5;
+    text-align: center;
+  }
+
   .fas,
   .fab,
   .far {
