@@ -16,7 +16,7 @@ author_profile: true
         <h2 class="archive__section-title" id="relationship-category-{{ category[0] }}">{{ category[1].title }}</h2>
         <div class="archive__section-items">
           {% for post in category_posts %}
-            {% include archive-single.html heading_tag="h3" %}
+            {% include archive-single-media.html heading_tag="h3" %}
           {% endfor %}
         </div>
       </section>
@@ -24,6 +24,6 @@ author_profile: true
   {% endfor %}
 {% else %}
   {% for post in site.relationship %}
-    {% include archive-single.html heading_tag="h2" %}
+    {% include archive-single-media.html heading_tag="h2" %}
   {% endfor %}
 {% endif %}

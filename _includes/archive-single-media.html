@@ -1,0 +1,45 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+{% assign heading_tag = include.heading_tag | default: "h2" %}
+{% assign image_alt = post.image_alt | default: post.title %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item archive__item--media" itemscope itemtype="http://schema.org/CreativeWork">
+    <{{ heading_tag }} class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </{{ heading_tag }}>
+
+    <div class="archive__media-row">
+      {% if post.image %}
+        <a class="archive__media-image" href="{{ base_path }}{{ post.url }}" rel="permalink" aria-label="View {{ post.title | escape }}">
+          <img
+            src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}"
+            alt="{{ image_alt | escape }}"
+            loading="lazy"
+            decoding="async">
+        </a>
+      {% endif %}
+
+      <div class="archive__media-content">
+        {% if post.date %}
+          <p class="archive__item-meta"><i class="fa fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time></p>
+        {% endif %}
+        {% if post.venue %}
+          <p class="archive__item-meta">{{ post.type }}{% if post.type and post.venue %} <span aria-hidden="true">&middot;</span> {% endif %}{{ post.venue }}{% if post.location %} <span aria-hidden="true">&middot;</span> {{ post.location }}{% endif %}</p>
+        {% endif %}
+        {% if post.excerpt %}
+          <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+</div>
